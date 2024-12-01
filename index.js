@@ -4,10 +4,18 @@ import{i as u,S as p}from"./assets/vendor-BrddEoy-.js";(function(){const r=docum
       <img class="gallery-image" src="${r}" alt="${o}" width="360"/>
       </a>
       <div class="container">
-      <p class="facts-container">Likes <span class="facts-span">${e}</span></p> 
-      <p class="facts-container">Views <span class="facts-span">${t}</span></p>
-      <p class="facts-container">Comments <span class="facts-span">${n}</span></p>
-      <p class="facts-container">Downloads <span class="facts-span">${f}</span></p>
+      <p class="facts-container">
+      Likes
+    <span class="facts-span">${e}</span></p> 
+      <p class="facts-container">
+      Views
+    <span class="facts-span">${t}</span></p>
+      <p class="facts-container">
+      Comments
+    <span class="facts-span">${n}</span></p>
+      <p class="facts-container">
+      Downloads
+    <span class="facts-span">${f}</span></p>
       </div>
       </li>
     `).join(""),g=document.querySelector(".js-form"),L=document.querySelector(".gallery"),c=document.querySelector(".form-search"),i=document.querySelector(".loader");g.addEventListener("submit",b);function b(s){s.preventDefault();const r=c.value.trim();r&&(c.value="",i.classList.add("visible"),m(r).then(a=>{h(L,a.hits),new p(".gallery a").refresh()}).catch(a=>{console.log(a),l("Sorry, there are no images matching your search query. Please, try again!")}).finally(()=>{i.classList.remove("visible")}))}
