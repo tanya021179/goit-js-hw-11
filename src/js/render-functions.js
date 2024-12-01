@@ -37,10 +37,18 @@ const createMarkup = arr => {
       <img class="gallery-image" src="${webformatURL}" alt="${tags}" width="360"/>
       </a>
       <div class="container">
-      <p class="facts-container">Likes <span class="facts-span">${likes}</span></p> 
-      <p class="facts-container">Views <span class="facts-span">${views}</span></p>
-      <p class="facts-container">Comments <span class="facts-span">${comments}</span></p>
-      <p class="facts-container">Downloads <span class="facts-span">${downloads}</span></p>
+      <p class="facts-container">
+      Likes
+    <span class="facts-span">${likes}</span></p> 
+      <p class="facts-container">
+      Views
+    <span class="facts-span">${views}</span></p>
+      <p class="facts-container">
+      Comments
+    <span class="facts-span">${comments}</span></p>
+      <p class="facts-container">
+      Downloads
+    <span class="facts-span">${downloads}</span></p>
       </div>
       </li>
     `
